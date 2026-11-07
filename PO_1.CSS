@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #a0b5e671;
+  color: #263238;
+}
+
+header {
+  background: #20212B;
+  color: rgb(248, 248, 247);
+  text-align: center;
+  padding: 28px 15px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+}
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 25px auto;
+}
+
+section {
+  margin-bottom: 28px;
+}
+
+.search-area, .add-area {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #d6e1ed;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 11px;
+  margin: 7px 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+button {
+  background: #7b8a25;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b2a213;
+}
+
+.activity-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.activity-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  border-left: 5px solid #93270b;
+  box-shadow: 0 2px 7px #d6e1ed;
+}
+
+.activity-card h3 {
+  margin-top: 0;
+  color: #888c1d;
+}
+
+.activity-card p {
+  line-height: 1.5;
+}
+
+.tag {
+  display: inline-block;
+  background: #e2f2e8;
+  color: #24800b;
+  padding: 5px 9px;
+  border-radius: 15px;
+  font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  background: #263238;
+  margin-top: 30px;
+  color: #cbd5e1;
+}
+
+#message {
+  color: #216b3b;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 24px;
+  }
+}

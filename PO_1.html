@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Child Activity Directory</title>
+  <link rel="stylesheet" href="PO_1.CSS">
+</head>
+
+<body>
+
+  <header>
+    <h1>Community Child Activity Directory</h1>
+    <p>Discover fun, safe and learning activities for children in your community.</p>
+  </header>
+
+  <main>
+
+    <section class="search-area">
+      <h2>Find an Activity</h2>
+
+      <input type="text" id="searchInput"
+      placeholder="Search by activity or location...">
+
+      <select id="ageFilter">
+        <option value="all">All age groups</option>
+        <option value="3-5">3–5 years</option>
+        <option value="6-8">6–8 years</option>
+        <option value="9-12">9–12 years</option>
+      </select>
+
+      <button onclick="showActivities()">Search</button>
+    </section>
+
+    <section>
+      <h2>Activities in Your Community</h2>
+
+      <div id="activityList" class="activity-list"></div>
+    </section>
+
+    <section class="add-area">
+      <h2>Suggest a New Activity</h2>
+
+      <form id="activityForm">
+
+        <input type="text" id="activityName"
+        placeholder="Activity name" required>
+
+        <input type="text" id="activityLocation"
+        placeholder="Location" required>
+
+        <select id="activityAge" required>
+          <option value="">Choose age group</option>
+          <option value="3-5">3–5 years</option>
+          <option value="6-8">6–8 years</option>
+          <option value="9-12">9–12 years</option>
+        </select>
+
+        <input type="text" id="activitySchedule"
+        placeholder="Schedule (e.g. Saturday, 10 AM)" required>
+
+        <input type="text" id="activityCost"
+        placeholder="Cost (e.g. Free / 200)" required>
+
+        <button type="submit">Add Activity</button>
+
+      </form>
+
+      <p id="message"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Student Project | Made using HTML, CSS and JavaScript by Us.</p>
+  </footer>
+
+  <script src="PO_1.js"></script>
+
+</body>
+</html>
